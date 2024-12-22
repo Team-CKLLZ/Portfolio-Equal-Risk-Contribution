@@ -49,8 +49,8 @@ The project uses Git for version control. The `.git` directory contains configur
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/Team-CKLLZ/Portfolio-Equal-Risk-Contribution.git
+   cd Portfolio-Equal-Risk-Contribution
    ```
 
 2. Set up the virtual environment and install dependencies:
