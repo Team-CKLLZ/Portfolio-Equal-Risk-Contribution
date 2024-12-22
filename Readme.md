@@ -20,7 +20,7 @@ The data for this project was gathered from the following sources:
 - **AlphaVantage API**: Financial statements  
 
 The data processing pipeline is available in the following repository:  
-[Majestic-Equity-Data](https://github.com/McKingN/Majestic-Equity-Data.git)  
+[https://github.com/McKingN/Majestic-Equity-Data.git](https://github.com/McKingN/Majestic-Equity-Data.git)  
 
 ## Algorithms  
 
