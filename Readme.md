@@ -1,12 +1,37 @@
-# Portfolio Equal Risk Contribution Project
+# Portfolio Equal Risk Contribution Project  
 
-We are setting up a portoflio Equal Risk Contribution on a universe of 5 ETFs: Momentum, Quality, Low_vol, Dividend and Value.
+This project focuses on implementing a **Portfolio Equal Risk Contribution** strategy across a universe of five ETFs: **Momentum**, **Quality**, **Low Volatility**, **Dividend**, and **Value**.  
 
-The first part is recorded in the portoflioBacktesting notebook, where we carry out a rolling window walk forward backtest to demonstrate the soundness of our approach.
+## Project Structure  
 
-The second part (the ETF_weights_to_stock_weight notebook) presents our final results after taking into account the various ESG criteria. We also show how we can move from ETF weights to the weight of the stocks contained in the ETFs.
+1. **Portfolio Backtesting**:  
+   The `PortfolioBacktesting` notebook contains a rolling window, walk-forward backtest to validate the robustness of our approach.  
 
-To make our project modular, we have implemented functions to generate tasks such as stock return calculation, metric calculation from return and many others in the GeneralFunction script.
+2. **ETF to Stock Weights**:  
+   The `ETF_weights_to_stock_weight` notebook presents the final results after incorporating ESG criteria. It also demonstrates the transition from ETF weights to the corresponding stock-level weights.  
+
+3. **Modular Design**:  
+   The project is modular, leveraging reusable functions implemented in the `GeneralFunction` script. These functions include tasks such as stock return calculations, metric derivation from returns, and more.  
+
+## Data Sources  
+
+The data for this project was gathered from the following sources:  
+- **Yahoo Finance**: Stock prices  
+- **AlphaVantage API**: Financial statements  
+
+The data processing pipeline is available in the following repository:  
+[Majestic-Equity-Data](https://github.com/McKingN/Majestic-Equity-Data.git)  
+
+## Algorithms  
+
+Our algorithms can be reviewed in:  
+- `./Smart beta/Backtester.ipynb`  
+- `./Smart beta/ETF_weights_to_stock_weight.ipynb`  
+
+## Results  
+
+The final results are compiled in PDF format and can be found in the `Results` directory.  
+
 
 ## Repository Structure
 
@@ -17,6 +42,9 @@ To make our project modular, we have implemented functions to generate tasks suc
 │   ├── ETF_weights_to_stock_weight.ipynb
 │   ├── GeneralFunction.py
 │   ├── image.jpg
+├── Results
+│   ├── Backtester.pdf
+│   ├── ETF_weights_to_stock_weight.pdf
 ├── requirements.txt
 ├── test.py
 └── Readme.md
